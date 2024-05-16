@@ -1,3 +1,10 @@
+
+<?php
+   session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,21 +19,25 @@
 
     <header>
           <input type ="checkbox" name="" id="toggler">
-          <label for ="toggler" class ="fas fa-bars"></label>         
-       <a href="" class="logo"> Drippin Essence<span>.</span></a>
+         <a href="" class="logo"> Drippin Essence<span>.</span></a>
   
        <nav class ="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#review">Reviews</a>
         <a href="#products">Products</a>
+        <a href="#review">Reviews</a>
         <a href="#contact">Contacts</a>
        </nav>
 
        <div class="icons">
-        <a href="" class="fa-solid fa-basket-shopping"></a>
+        <a href="products.php" class="fa-solid fa-basket-shopping"></a>
         <a href="" class="fa-solid fa-user"></a>
+        <a href="#" onclick="logout()"><i class="fa-solid fa-sign-out"></i></a>
+      
        </div>
+    
+          
+       
   
     </header>
 
@@ -39,7 +50,7 @@
          <h3>Welcome</h3>
          <span>Best Shop For | FASHION</span>
          <p>Shop now! we are 100% sure that our customer will be satisfied to our products!</p>
-         <a href="#" class="btn">Shop Now</a>
+         <a href="products.php" class="btn">Shop Now</a>
     </div>
      
 </section>
@@ -108,7 +119,7 @@
 
 
 <section class="products" id="products">
-    <h1 class="heading">latest products</h1>
+    <h1 class="heading"><a href ="products.php">Check latest products</a></h1>
 
     <div class="box-container">
        
@@ -262,7 +273,7 @@
 
      <section class="review" id="review">
 
-        <h1 class="heading">customers review</h1>
+        <h1 class="heading" style = "color: white;">customers review</h1>
 
         <div class="box-container">
               <div class="box">
@@ -331,7 +342,7 @@
      </section>
 
    <section class="contact" id="contact">
-          <h1 class="heading">Contact Us</h1>
+          <h1 class="heading" style = "color: white;">Contact Us</h1>
 
           <div class="row">
                <form action="">
@@ -349,6 +360,7 @@
 
    </section>
  
+   <script src="logout.js"></script>
 
 </body>
 </html>

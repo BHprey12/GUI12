@@ -1,5 +1,3 @@
 <?php
-
-$con = mysqli_connect("localhost" , "root","","tutorial") or die ("Couldn't connect");
-
+$con = mysqli_connect("localhost", "root", "", "backend") or die("Couldn't connect to database");
 ?>

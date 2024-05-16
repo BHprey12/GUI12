@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./adminscss/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box form-box">
+            <header>Forgot Password</header>
+            <form>
+           
+                
+                <div class="field input">
+                    <label for="password">New Password</label>
+                    <div class="password-toggle">
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </div>
+                
+                <div class="field input">
+                    <label for="confirm_password">Confirm New Password</label>
+                    <div class="password-toggle">
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">Show</span>
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <input type="submit" name="submit" class="btn" value="Register" required>
+                </div>
+                <div class="links">
+                    Already have an account?<a href="login.html"> Login Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInputs = document.querySelectorAll('input[type="password"]');
+            passwordInputs.forEach(function(input) {
+                if (input.type === "password") {
+                    input.type = "text";
+                } else {
+                    input.type = "password";
+                }
+            });
+        }
+    </script>
+    
+    
+</body>
+</html>

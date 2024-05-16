@@ -13,6 +13,8 @@
      transition: .2s linear;
 }
 
+
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -34,9 +36,11 @@ section{
     border-radius: 20px;
 }
 
+
 .heading span{
     color: white;
 }
+
 
 .btn{
     display: inline-block;
@@ -99,13 +103,12 @@ header #toggler{
 }
 
 header .fa-bars{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ffffff;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    border: .1rem solid rgba(255, 255, 255, 0.3);
    
 }
+
+
 
 .home{
     display: flex;
@@ -236,9 +239,14 @@ header .fa-bars{
 
 }
 
-.heading{
-    color: #fff;
+.heading a {
+    color: white;
 }
+
+.heading a:hover{
+    color: blue;
+}
+
 .products .box-container .box{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -394,6 +402,8 @@ header .fa-bars{
     color: #999;
 }
 
+
+
 .contact .row{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -437,28 +447,6 @@ header .fa-bars{
     height: 15rem;
     resize: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
